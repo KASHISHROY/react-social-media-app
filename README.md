@@ -1,16 +1,86 @@
-# React + Vite
+React Social Media App
+Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple social media application built using React. The project demonstrates global state management using the Context API and useReducer, along with a clean component-based architecture and Bootstrap styling.
 
-Currently, two official plugins are available:
+The application displays a list of posts, including titles, content, tags, and reaction counts.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
 
-## React Compiler
+Home view displaying a list of posts
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Create Post view (UI implemented)
 
-## Expanding the ESLint configuration
+Default posts initialized using useReducer
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Dynamic tag rendering
+
+Reaction count displayed using Bootstrap badges
+
+Global state management with Context API
+
+Component-based architecture
+
+Tech Stack
+
+React
+
+Context API
+
+useReducer
+
+Bootstrap 5
+
+Vite
+
+
+Key Concepts Implemented
+
+Global state management using Context API
+
+Reducer-based state updates with useReducer
+
+Conditional rendering for view switching
+
+Array mapping in JSX
+
+Proper key usage for list rendering
+
+Modular and reusable component structure
+
+Installation and Setup
+
+Clone the repository:
+
+git clone https://github.com/YOUR_USERNAME/react-social-media-app.git
+
+Navigate to the project directory:
+
+cd react-social-media-app
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
+npm run dev
+Future Improvements
+
+Implement full post creation functionality
+
+Add delete post feature
+
+Add reaction increment functionality
+
+Integrate React Router for navigation
+
+Persist data using localStorage
+
+Connect to backend API
+
+Add authentication system
+
+Author
+
+Kashish Roy
