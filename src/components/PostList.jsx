@@ -2,6 +2,7 @@ import { useContext ,useEffect, useState} from "react";
 import Post from "./Post";
 import { PostList as PostListData } from "../store/post-list-store";
 import Message from "./Message"
+import LoadingSpinner from "./LoadingSpinner";
 const PostList=()=>{
     const{postList,addInitialPosts}=useContext(PostListData);
     
@@ -22,9 +23,12 @@ const PostList=()=>{
     return (
         <>
         {
-            postList.length === 0 && <Message />
+            fetching && <LoadingSpinner></LoadingSpinner>
         }
-        {postList.map((post)=>(
+        {
+           !fetching && postList.length === 0 && <Message />
+        }
+        {!fetching && postList.map((post)=>(
             <Post key={post.id} post={post}></Post>))}
         </>
     )
